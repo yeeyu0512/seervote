@@ -102,55 +102,55 @@ export function initSeerLookup(dependencies) {
     const { startLatestSeerBrowse, startSeerPetTypeFilter, loadMoreSeerPetTypeFilterResults, loadMoreSeerBrowseResults, updateSeerBrowseLoadingProgress, loadSeerBrowsePage, updateSeerBrowseSentinel, clearSeerBrowseSentinel, getBrowseState, resetBrowseState } = createLookupBrowseController({
         seerLookupResults,
         seerLookupIdInput,
-        resetSeerPetInfo:(...args) => resetSeerPetInfo(...args),
+        resetSeerPetInfo: (...args) => resetSeerPetInfo(...args),
         seerLookupMessage,
         seerLookupPreview,
-        getTaiwanProgressSettings:(...args) => getTaiwanProgressSettings(...args),
-        fetchSeerJson:(...args) => fetchSeerJson(...args),
-        getPetSearchMethod:() => seerPetSearchMethod,
-        fetchSeerElementTypeCombinations:(...args) => fetchSeerElementTypeCombinations(...args),
-        convertToTraditionalChinese:(...args) => convertToTraditionalChinese(...args),
-        renderSeerPetTypeOptions:(...args) => renderSeerPetTypeOptions(...args),
-        fetchSeerPetCatalog:(...args) => fetchSeerPetCatalog(...args),
-        getPetTypeCategory:() => seerPetTypeCategory,
-        matchesTaiwanPetProgress:(...args) => matchesTaiwanPetProgress(...args),
-        renderSeerPetSearchResults:(...args) => renderSeerPetSearchResults(...args),
-        matchesSelectedSkinCategory:(...args) => matchesSelectedSkinCategory(...args),
-        loadSeerSkinEntry:(...args) => loadSeerSkinEntry(...args),
-        matchesTaiwanSkinProgress:(...args) => matchesTaiwanSkinProgress(...args),
-        renderSeerSkinSearchResults:(...args) => renderSeerSkinSearchResults(...args),
-        loadSeerPetSearchTypeDetails:(...args) => loadSeerPetSearchTypeDetails(...args),
-        getLookupRequestId:() => seerLookupRequestId,
-        getLookupMode:() => seerLookupMode,
-        getSkinSearchMode:() => seerSkinSearchMode,
-        getSelectedPetTypeId:() => selectedSeerPetTypeId,
-        getSelectedSkinCategoryId:() => selectedSeerSkinCategoryId,
-        getTaiwanOnlyEnabled:() => seerTaiwanOnlyEnabled
+        getTaiwanProgressSettings: (...args) => getTaiwanProgressSettings(...args),
+        fetchSeerJson: (...args) => fetchSeerJson(...args),
+        getPetSearchMethod: () => seerPetSearchMethod,
+        fetchSeerElementTypeCombinations: (...args) => fetchSeerElementTypeCombinations(...args),
+        convertToTraditionalChinese: (...args) => convertToTraditionalChinese(...args),
+        renderSeerPetTypeOptions: (...args) => renderSeerPetTypeOptions(...args),
+        fetchSeerPetCatalog: (...args) => fetchSeerPetCatalog(...args),
+        getPetTypeCategory: () => seerPetTypeCategory,
+        matchesTaiwanPetProgress: (...args) => matchesTaiwanPetProgress(...args),
+        renderSeerPetSearchResults: (...args) => renderSeerPetSearchResults(...args),
+        matchesSelectedSkinCategory: (...args) => matchesSelectedSkinCategory(...args),
+        loadSeerSkinEntry: (...args) => loadSeerSkinEntry(...args),
+        matchesTaiwanSkinProgress: (...args) => matchesTaiwanSkinProgress(...args),
+        renderSeerSkinSearchResults: (...args) => renderSeerSkinSearchResults(...args),
+        loadSeerPetSearchTypeDetails: (...args) => loadSeerPetSearchTypeDetails(...args),
+        getLookupRequestId: () => seerLookupRequestId,
+        getLookupMode: () => seerLookupMode,
+        getSkinSearchMode: () => seerSkinSearchMode,
+        getSelectedPetTypeId: () => selectedSeerPetTypeId,
+        getSelectedSkinCategoryId: () => selectedSeerSkinCategoryId,
+        getTaiwanOnlyEnabled: () => seerTaiwanOnlyEnabled
     });
 
     const { openSeerRelatedSkinsModal, loadSeerRelatedSkins, renderSeerRelatedSkins, openSeerPetInfoModal, closeSeerPetInfoModal, closeSeerRelatedSkinsModal, openSeerExternalLinkModal, closeSeerExternalLinkModal } = createLookupDialogs({
         seerRelatedSkinsModal,
-        updateSeerModalScrollLock:(...args) => updateSeerModalScrollLock(...args),
-        getTaiwanProgressSettings:(...args) => getTaiwanProgressSettings(...args),
-        fetchSeerSkinCatalog:(...args) => fetchSeerSkinCatalog(...args),
-        matchesTaiwanSkinProgress:(...args) => matchesTaiwanSkinProgress(...args),
-        loadSeerSkinEntry:(...args) => loadSeerSkinEntry(...args),
-        getSeerSkinImageResourceId:(...args) => getSeerSkinImageResourceId(...args),
-        convertToTraditionalChinese:(...args) => convertToTraditionalChinese(...args),
-        findSeerPetForSkinThumbnailFallback:(...args) => findSeerPetForSkinThumbnailFallback(...args),
-        skinCategoryIconUrl:(...args) => skinCategoryIconUrl(...args),
-        openSeerSkinInSearch:(...args) => openSeerSkinInSearch(...args),
+        updateSeerModalScrollLock: (...args) => updateSeerModalScrollLock(...args),
+        getTaiwanProgressSettings: (...args) => getTaiwanProgressSettings(...args),
+        fetchSeerSkinCatalog: (...args) => fetchSeerSkinCatalog(...args),
+        matchesTaiwanSkinProgress: (...args) => matchesTaiwanSkinProgress(...args),
+        loadSeerSkinEntry: (...args) => loadSeerSkinEntry(...args),
+        getSeerSkinImageResourceId: (...args) => getSeerSkinImageResourceId(...args),
+        convertToTraditionalChinese: (...args) => convertToTraditionalChinese(...args),
+        findSeerPetForSkinThumbnailFallback: (...args) => findSeerPetForSkinThumbnailFallback(...args),
+        skinCategoryIconUrl: (...args) => skinCategoryIconUrl(...args),
+        openSeerSkinInSearch: (...args) => openSeerSkinInSearch(...args),
         seerPetInfoModal,
-        loadSeerPetInfo:(...args) => loadSeerPetInfo(...args),
+        loadSeerPetInfo: (...args) => loadSeerPetInfo(...args),
         seerExternalLinkModal,
         seerPetInfoRetry,
-        getCurrentPetId:() => currentSeerPetId,
-        getCurrentPetData:() => currentSeerPetData,
-        getCurrentInfoUrl:() => currentSeerInfoUrl,
-        getTaiwanOnlyEnabled:() => seerTaiwanOnlyEnabled
+        getCurrentPetId: () => currentSeerPetId,
+        getCurrentPetData: () => currentSeerPetData,
+        getCurrentInfoUrl: () => currentSeerInfoUrl,
+        getTaiwanOnlyEnabled: () => seerTaiwanOnlyEnabled
     });
 
-    const { renderSeerPetInfo, renderSeerPetInfoIdentity } = createPetInfoView({ seerPetInfoPanel, seerPetInfoTitle, seerPetInfoAvatar, seerPetInfoMeta, convertToTraditionalChinese, openTypeLookup, closeSeerPetInfoModal:(...args) => closeSeerPetInfoModal(...args), resolveSeerWikiSoulmarkImage });
+    const { renderSeerPetInfo, renderSeerPetInfoIdentity } = createPetInfoView({ seerPetInfoPanel, seerPetInfoTitle, seerPetInfoAvatar, seerPetInfoMeta, convertToTraditionalChinese, openTypeLookup, closeSeerPetInfoModal: (...args) => closeSeerPetInfoModal(...args), resolveSeerWikiSoulmarkImage });
 
     function setSeerLookupMode(mode) {
         if (mode !== "pet" && mode !== "skin") return;
@@ -603,7 +603,7 @@ export function initSeerLookup(dependencies) {
             if (requestId !== seerLookupRequestId) return;
             const matchingSkins = skins.filter((skin) =>
                 String(skin && skin.pet && skin.pet.id) === String(petId)
-                    && matchesTaiwanSkinProgress(skin, pet, settings)
+                && matchesTaiwanSkinProgress(skin, pet, settings)
             );
             if (matchingSkins.length === 0) {
                 seerLookupMessage.textContent = `找不到綁定精靈「${convertToTraditionalChinese(pet.name || `#${petId}`)}」的皮膚。`;
@@ -640,7 +640,7 @@ export function initSeerLookup(dependencies) {
             const petsById = new Map(visiblePets.map((pet) => [String(pet.id), pet]));
             const matchingSkins = skins.filter((skin) =>
                 petsById.has(String(skin && skin.pet && skin.pet.id))
-                    && matchesTaiwanSkinProgress(skin, petsById.get(String(skin.pet.id)), settings)
+                && matchesTaiwanSkinProgress(skin, petsById.get(String(skin.pet.id)), settings)
             );
             if (matchingSkins.length === 0) {
                 seerLookupMessage.textContent = `找到 ${visiblePets.length} 隻精靈，但沒有找到台服進度內的綁定皮膚。`;
@@ -801,7 +801,7 @@ export function initSeerLookup(dependencies) {
     function renderSeerPetSearchResults(pets, typeDetailsById, append = false) {
         if (!append) seerLookupResults.replaceChildren();
         pets.forEach((pet) => {
-            const button = createPetResultButton(pet,typeDetailsById,convertToTraditionalChinese);
+            const button = createPetResultButton(pet, typeDetailsById, convertToTraditionalChinese);
             button.addEventListener("click", async () => {
                 const isBrowsing = getBrowseState()
                     && getBrowseState().requestId === seerLookupRequestId
@@ -1315,197 +1315,201 @@ export function initSeerLookup(dependencies) {
         void handleSeerLookupImageError(seerLookupIllustrationImage);
     });
 
-        updateSeerPetSearchMethodUi();
+    updateSeerPetSearchMethodUi();
 
-        seerLookupForm.addEventListener("submit", (event) => {
-            event.preventDefault();
-            if (seerLookupMode === "skin" && seerSkinSearchMode === "category") {
-                void startLatestSeerBrowse(++seerLookupRequestId);
+    seerLookupForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        if (seerLookupMode === "skin" && seerSkinSearchMode === "category") {
+            void startLatestSeerBrowse(++seerLookupRequestId);
+            return;
+        }
+        startSeerPetLookup(seerLookupIdInput.value.trim());
+    });
+    seerPetSearchMethodButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            setSeerPetSearchMethod(button.dataset.petSearchMethod);
+        });
+    });
+    seerPetTypeCategoryButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            setSeerPetTypeCategory(button.dataset.petTypeCategory);
+            closeSeerPetTypeModal();
+        });
+    });
+    seerPetTypeSearch.addEventListener("input", () => {
+        seerPetPickerQuery = seerPetTypeSearch.value;
+        renderSeerPetTypeOptions();
+    });
+    seerPetTypeOptions.addEventListener("click", (event) => {
+        const button = event.target.closest("[data-pet-type-id]");
+        if (!button || !seerPetTypeOptions.contains(button)) return;
+        const nextTypeId = button.dataset.petTypeId === "all"
+            ? null
+            : Number(button.dataset.petTypeId);
+        closeSeerPetTypeModal();
+        if (selectedSeerPetTypeId === nextTypeId) return;
+        selectedSeerPetTypeId = nextTypeId;
+        const selectedType = getElementTypeCombinations().find(type => type.id === nextTypeId);
+        if (selectedType) seerPetTypeCategory = selectedType.isDouble ? "double" : "single";
+        updateSeerPetSearchMethodUi();
+        renderSeerPetTypeOptions();
+        updateSeerPetTypeCurrentDisplay();
+        if (seerPetSearchMethod === "type") {
+            void startSeerPetTypeFilter(++seerLookupRequestId);
+        }
+    });
+    updateSeerPetTypeCurrentDisplay();
+    if (seerPetTypeOpenModalButton) {
+        seerPetTypeOpenModalButton.addEventListener("click", () => {
+            openSeerPetTypeModal(seerPetTypeOpenModalButton);
+        });
+    }
+    if (seerPetTypeTriggerCard) {
+        seerPetTypeTriggerCard.addEventListener("click", (event) => {
+            if (!event.target.closest("button")) {
+                openSeerPetTypeModal(seerPetTypeOpenModalButton);
+            }
+        });
+        seerPetTypeTriggerCard.addEventListener("keydown", (event) => {
+            if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                openSeerPetTypeModal(seerPetTypeOpenModalButton);
+            }
+        });
+    }
+    if (seerPetTypeClose) {
+        seerPetTypeClose.addEventListener("click", () => closeSeerPetTypeModal());
+    }
+    if (seerPetTypeModal) {
+        seerPetTypeModal.addEventListener("pointerdown", (event) => {
+            seerPetTypePointerStartedOnBackdrop = event.target === seerPetTypeModal;
+        });
+        seerPetTypeModal.addEventListener("click", (event) => {
+            if (seerPetTypePointerStartedOnBackdrop && event.target === seerPetTypeModal) {
+                closeSeerPetTypeModal();
+            }
+            seerPetTypePointerStartedOnBackdrop = false;
+        });
+        seerPetTypeModal.addEventListener("keydown", (event) => {
+            if (event.key === "Escape") {
+                event.preventDefault();
+                closeSeerPetTypeModal();
                 return;
             }
-            startSeerPetLookup(seerLookupIdInput.value.trim());
-        });
-        seerPetSearchMethodButtons.forEach((button) => {
-            button.addEventListener("click", () => {
-                setSeerPetSearchMethod(button.dataset.petSearchMethod);
-            });
-        });
-        seerPetTypeCategoryButtons.forEach((button) => {
-            button.addEventListener("click", () => {
-                setSeerPetTypeCategory(button.dataset.petTypeCategory);
-                closeSeerPetTypeModal();
-            });
-        });
-        seerPetTypeSearch.addEventListener("input", () => {
-            seerPetPickerQuery = seerPetTypeSearch.value;
-            renderSeerPetTypeOptions();
-        });
-        seerPetTypeOptions.addEventListener("click", (event) => {
-            const button = event.target.closest("[data-pet-type-id]");
-            if (!button || !seerPetTypeOptions.contains(button)) return;
-            const nextTypeId = button.dataset.petTypeId === "all"
-                ? null
-                : Number(button.dataset.petTypeId);
-            closeSeerPetTypeModal();
-            if (selectedSeerPetTypeId === nextTypeId) return;
-            selectedSeerPetTypeId = nextTypeId;
-            const selectedType = getElementTypeCombinations().find(type => type.id === nextTypeId);
-            if (selectedType) seerPetTypeCategory = selectedType.isDouble ? "double" : "single";
-            updateSeerPetSearchMethodUi();
-            renderSeerPetTypeOptions();
-            updateSeerPetTypeCurrentDisplay();
-            if (seerPetSearchMethod === "type") {
-                void startSeerPetTypeFilter(++seerLookupRequestId);
+            if (event.key !== "Tab") return;
+            const focusable = seerPetTypeModal.querySelectorAll("button:not([disabled]):not([hidden])");
+            if (focusable.length === 0) return;
+            const first = focusable[0];
+            const last = focusable[focusable.length - 1];
+            if (event.shiftKey && document.activeElement === first) {
+                event.preventDefault();
+                last.focus();
+            } else if (!event.shiftKey && document.activeElement === last) {
+                event.preventDefault();
+                first.focus();
             }
         });
-        updateSeerPetTypeCurrentDisplay();
-        if (seerPetTypeOpenModalButton) {
-            seerPetTypeOpenModalButton.addEventListener("click", () => {
-                openSeerPetTypeModal(seerPetTypeOpenModalButton);
-            });
-        }
-        if (seerPetTypeTriggerCard) {
-            seerPetTypeTriggerCard.addEventListener("click", (event) => {
-                if (!event.target.closest("button")) {
-                    openSeerPetTypeModal(seerPetTypeOpenModalButton);
-                }
-            });
-            seerPetTypeTriggerCard.addEventListener("keydown", (event) => {
-                if (event.key === "Enter" || event.key === " ") {
-                    event.preventDefault();
-                    openSeerPetTypeModal(seerPetTypeOpenModalButton);
-                }
-            });
-        }
-        if (seerPetTypeClose) {
-            seerPetTypeClose.addEventListener("click", () => closeSeerPetTypeModal());
-        }
-        if (seerPetTypeModal) {
-            seerPetTypeModal.addEventListener("pointerdown", (event) => {
-                seerPetTypePointerStartedOnBackdrop = event.target === seerPetTypeModal;
-            });
-            seerPetTypeModal.addEventListener("click", (event) => {
-                if (seerPetTypePointerStartedOnBackdrop && event.target === seerPetTypeModal) {
-                    closeSeerPetTypeModal();
-                }
-                seerPetTypePointerStartedOnBackdrop = false;
-            });
-            seerPetTypeModal.addEventListener("keydown", (event) => {
-                if (event.key === "Escape") {
-                    event.preventDefault();
-                    closeSeerPetTypeModal();
-                    return;
-                }
-                if (event.key !== "Tab") return;
-                const focusable = seerPetTypeModal.querySelectorAll("button:not([disabled]):not([hidden])");
-                if (focusable.length === 0) return;
-                const first = focusable[0];
-                const last = focusable[focusable.length - 1];
-                if (event.shiftKey && document.activeElement === first) {
-                    event.preventDefault();
-                    last.focus();
-                } else if (!event.shiftKey && document.activeElement === last) {
-                    event.preventDefault();
-                    first.focus();
-                }
-            });
-        }
-        document.querySelectorAll("[data-external-link]").forEach((link) => {
-            link.addEventListener("click", (event) => {
-                event.preventDefault();
-                openSeerExternalLinkModal(link.href);
-            });
+    }
+    document.querySelectorAll("[data-external-link]").forEach((link) => {
+        link.addEventListener("click", (event) => {
+            event.preventDefault();
+            openSeerExternalLinkModal(link.href);
         });
-        seerSkinSearchModeTabs.forEach((tab) => {
-            tab.addEventListener("click", () => {
-                setSeerSkinSearchMode(tab.dataset.skinSearchMode);
-                if (seerLookupMode === "skin" && (tab.dataset.skinSearchMode === "category" || !seerLookupIdInput.value.trim())) {
-                    void startLatestSeerBrowse(++seerLookupRequestId);
-                }
-            });
-        });
-        seerSkinCategoryOptions.addEventListener("click", (event) => {
-            const button = event.target.closest("[data-skin-category-id]");
-            if (!button || !seerSkinCategoryOptions.contains(button)) return;
-            const categoryValue = button.dataset.skinCategoryId;
-            selectedSeerSkinCategoryId = categoryValue === "all" ? null : Number(categoryValue);
-            seerSkinCategoryOptions.querySelectorAll("[data-skin-category-id]").forEach((option) => {
-                const selected = option === button;
-                option.classList.toggle("is-active", selected);
-                option.setAttribute("aria-pressed", String(selected));
-            });
-            if (seerLookupMode !== "skin" || !["skin", "category"].includes(seerSkinSearchMode)) return;
-            if (seerSkinSearchMode === "skin" && seerLookupIdInput.value.trim()) {
-                startSeerPetLookup(seerLookupIdInput.value.trim());
-            } else {
+    });
+    seerSkinSearchModeTabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+            setSeerSkinSearchMode(tab.dataset.skinSearchMode);
+            if (seerLookupMode === "skin" && (tab.dataset.skinSearchMode === "category" || !seerLookupIdInput.value.trim())) {
                 void startLatestSeerBrowse(++seerLookupRequestId);
             }
         });
-        seerLookupIdInput.addEventListener("input", () => {
-            if (!isSeerLookupComposing) scheduleSeerPetLookup();
+    });
+    seerSkinCategoryOptions.addEventListener("click", (event) => {
+        const button = event.target.closest("[data-skin-category-id]");
+        if (!button || !seerSkinCategoryOptions.contains(button)) return;
+        const categoryValue = button.dataset.skinCategoryId;
+        selectedSeerSkinCategoryId = categoryValue === "all" ? null : Number(categoryValue);
+        seerSkinCategoryOptions.querySelectorAll("[data-skin-category-id]").forEach((option) => {
+            const selected = option === button;
+            option.classList.toggle("is-active", selected);
+            option.setAttribute("aria-pressed", String(selected));
         });
-        seerLookupIdInput.addEventListener("compositionstart", () => {
-            isSeerLookupComposing = true;
-            invalidateSeerPetLookup();
-        });
-        seerLookupIdInput.addEventListener("compositionend", () => {
-            isSeerLookupComposing = false;
-            scheduleSeerPetLookup();
-        });
-        seerTaiwanProgressOnly.addEventListener("change", () => {
-            seerTaiwanOnlyEnabled = seerTaiwanProgressOnly.checked;
-            refreshCurrentSeerLookup();
-        });
-        seerLookupMoreInfoButton.addEventListener("click", openSeerExternalLinkModal);
-        seerLookupSkinMoreInfoButton.addEventListener("click", openSeerExternalLinkModal);
-        seerLookupPetSkinsButton.addEventListener("click", openSeerSkinSearchForCurrentPet);
-        seerPetInfoSkinsButton.addEventListener("click", openSeerRelatedSkinsModal);
+        if (seerLookupMode !== "skin" || !["skin", "category"].includes(seerSkinSearchMode)) return;
+        if (seerSkinSearchMode === "skin" && seerLookupIdInput.value.trim()) {
+            startSeerPetLookup(seerLookupIdInput.value.trim());
+        } else {
+            void startLatestSeerBrowse(++seerLookupRequestId);
+        }
+    });
+    seerLookupIdInput.addEventListener("input", () => {
+        if (!isSeerLookupComposing) scheduleSeerPetLookup();
+    });
+    seerLookupIdInput.addEventListener("compositionstart", () => {
+        isSeerLookupComposing = true;
+        invalidateSeerPetLookup();
+    });
+    seerLookupIdInput.addEventListener("compositionend", () => {
+        isSeerLookupComposing = false;
+        scheduleSeerPetLookup();
+    });
+    seerTaiwanProgressOnly.addEventListener("change", () => {
+        seerTaiwanOnlyEnabled = seerTaiwanProgressOnly.checked;
+        refreshCurrentSeerLookup();
+    });
+    seerLookupMoreInfoButton.addEventListener("click", () => {
+        openSeerExternalLinkModal();
+    });
+    seerLookupSkinMoreInfoButton.addEventListener("click", () => {
+        openSeerExternalLinkModal();
+    });
+    seerLookupPetSkinsButton.addEventListener("click", openSeerSkinSearchForCurrentPet);
+    seerPetInfoSkinsButton.addEventListener("click", openSeerRelatedSkinsModal);
 
-        seerPetInfoToggle.addEventListener("click", () => {
-            openSeerPetInfoModal();
-        });
+    seerPetInfoToggle.addEventListener("click", () => {
+        openSeerPetInfoModal();
+    });
 
-        lookupInstance = {
-            setMode: setSeerLookupMode,
-            getMode: () => seerLookupMode,
-            searchPetById: (petId) => {
-                const id = String(petId || '').trim();
-                if (!/^[1-9][0-9]{0,9}$/.test(id)) return;
-                setSeerLookupMode('pet');
-                setSeerPetSearchMethod('query');
-                seerLookupIdInput.value = id;
-                startSeerPetLookup(id);
-            },
-            searchSkinById: (skinId) => {
-                const id = String(skinId || '').trim();
-                if (!/^[1-9][0-9]{0,9}$/.test(id)) return;
-                setSeerLookupMode('skin');
-                setSeerSkinSearchMode('skin');
-                seerLookupIdInput.value = id;
-                startSeerPetLookup(id);
-            },
-            openPetInfo: (petId) => {
-                const normalizedPetId = String(petId || "").trim();
-                if (!normalizedPetId) return;
-                const opener = document.activeElement;
-                currentSeerPetId = normalizedPetId;
-                currentSeerPetData = { id: normalizedPetId };
-                currentSeerInfoUrl = `https://wiki.biligame.com/seer/${encodeURI(`精灵:${normalizedPetId}`)}`;
-                seerLookupMoreInfoButton.hidden = false;
-                renderSeerPetInfoIdentity(currentSeerPetData, null);
-                openSeerPetInfoModal(opener);
-            },
-            openExternalLink: (url) => openSeerExternalLinkModal(url),
-            browseLatestIfEmpty: () => {
-                if (!seerLookupIdInput.value.trim()) {
-                    if (seerLookupMode === "pet" && seerPetSearchMethod === "type") {
-                        void startSeerPetTypeFilter(++seerLookupRequestId);
-                    } else {
-                        void startLatestSeerBrowse(++seerLookupRequestId);
-                    }
+    lookupInstance = {
+        setMode: setSeerLookupMode,
+        getMode: () => seerLookupMode,
+        searchPetById: (petId) => {
+            const id = String(petId || '').trim();
+            if (!/^[1-9][0-9]{0,9}$/.test(id)) return;
+            setSeerLookupMode('pet');
+            setSeerPetSearchMethod('query');
+            seerLookupIdInput.value = id;
+            startSeerPetLookup(id);
+        },
+        searchSkinById: (skinId) => {
+            const id = String(skinId || '').trim();
+            if (!/^[1-9][0-9]{0,9}$/.test(id)) return;
+            setSeerLookupMode('skin');
+            setSeerSkinSearchMode('skin');
+            seerLookupIdInput.value = id;
+            startSeerPetLookup(id);
+        },
+        openPetInfo: (petId) => {
+            const normalizedPetId = String(petId || "").trim();
+            if (!normalizedPetId) return;
+            const opener = document.activeElement;
+            currentSeerPetId = normalizedPetId;
+            currentSeerPetData = { id: normalizedPetId };
+            currentSeerInfoUrl = `https://wiki.biligame.com/seer/${encodeURI(`精灵:${normalizedPetId}`)}`;
+            seerLookupMoreInfoButton.hidden = false;
+            renderSeerPetInfoIdentity(currentSeerPetData, null);
+            openSeerPetInfoModal(opener);
+        },
+        openExternalLink: (url) => openSeerExternalLinkModal(url),
+        browseLatestIfEmpty: () => {
+            if (!seerLookupIdInput.value.trim()) {
+                if (seerLookupMode === "pet" && seerPetSearchMethod === "type") {
+                    void startSeerPetTypeFilter(++seerLookupRequestId);
+                } else {
+                    void startLatestSeerBrowse(++seerLookupRequestId);
                 }
             }
-        };
+        }
+    };
 
-        return lookupInstance;
+    return lookupInstance;
 }
